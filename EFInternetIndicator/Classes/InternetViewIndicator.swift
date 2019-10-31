@@ -13,7 +13,6 @@ public class InternetViewIndicator {
     private var status:MessageView
     
     init(backgroundColor:UIColor = UIColor.red, style: MessageView.Layout = .statusLine, textColor:UIColor = UIColor.white, message:String = "Please, check your internet connection", remoteHostName: String = "apple.com", topOffset: CGFloat) {
-        
         status = MessageView.viewFromNib(layout: style)
         status.topLayoutMarginAddition = topOffset
         self.initializer(backgroundColor: backgroundColor, style: style, textColor: textColor, message: message, remoteHostName: remoteHostName, hideButton: true)
